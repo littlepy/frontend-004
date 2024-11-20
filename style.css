@@ -30,25 +30,31 @@
     --rose-50: hsl(330, 100%, 98%);
 }
 
-body {
+html {
     font-family: 'Outfit', 'YoungSerif', sans-serif;
     font-size: 16px;
     font-weight: 300;
+}
+
+body {
     /* height: 100vh; */
     background-color: #F3E5D8;
+}
+
+main {
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 
 article.blog {
     width: 50%;
     background-color: white;
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2rem 2rem 5rem 2rem;
     line-height: 2rem;
     font-size: 1.2rem;
-    margin: 5rem auto;
+    /* margin: 5rem auto; */
 
     hr {
         border: 1px solid #E0E0E0;
@@ -138,10 +144,15 @@ article.blog {
 }
 
 @media screen and (max-width: 700px) {
+    html {
+        font-size: 14px;
+    }
+    main {
+        padding: 0;
+    }
     article.blog {
         width: 100%;
-        margin: 0;
-        padding: 1rem;
+        padding: 0 1rem 5rem;
         border-radius: 0;
 
         h1 {
